@@ -1,0 +1,128 @@
+country,alpha_2_code,alpha_3_code,numeric_code,indicator,time_period,obs_value,sex,unit_multiplier,unit_of_measure,observation_status,observation_confidentaility,time_period_activity_related_to_when_the_data_are_collected,current_age
+Afghanistan,AF,AFG,4,Children living in households with income below the national poverty line (as a % of all children),2020,55.40848922729492,Total,,%,,,,Total
+Albania,AL,ALB,8,Children living in households with income below the national poverty line (as a % of all children),2020,16.74441909790039,Total,,%,,,,Total
+Algeria,DZ,DZA,12,Children living in households with income below the national poverty line (as a % of all children),2020,6.3345112800598145,Total,,%,,,,Total
+Argentina,AR,ARG,32,Children living in households with income below the national poverty line (as a % of all children),2020,38.768638610839844,Total,,%,,,,Total
+Armenia,AM,ARM,51,Children living in households with income below the national poverty line (as a % of all children),2020,23.842416763305664,Total,,%,,,,Total
+Azerbaijan,AZ,AZE,31,Children living in households with income below the national poverty line (as a % of all children),2020,6.754509925842285,Total,,%,,,,Total
+Bangladesh,BD,BGD,50,Children living in households with income below the national poverty line (as a % of all children),2020,26.672809600830078,Total,,%,,,,Total
+Belarus,BY,BLR,112,Children living in households with income below the national poverty line (as a % of all children),2020,1.5271508693695068,Total,,%,,,,Total
+Benin,BJ,BEN,204,Children living in households with income below the national poverty line (as a % of all children),2020,44.2050895690918,Total,,%,,,,Total
+Bhutan,BT,BTN,64,Children living in households with income below the national poverty line (as a % of all children),2020,10.435752868652344,Total,,%,,,,Total
+"Bolivia, Plurinational State of",BO,BOL,68,Children living in households with income below the national poverty line (as a % of all children),2020,39.891414642333984,Total,,%,,,,Total
+Bolivia,BO,BOL,68,Children living in households with income below the national poverty line (as a % of all children),2020,39.891414642333984,Total,,%,,,,Total
+Bosnia and Herzegovina,BA,BIH,70,Children living in households with income below the national poverty line (as a % of all children),2020,10.68799114227295,Total,,%,,,,Total
+Botswana,BW,BWA,72,Children living in households with income below the national poverty line (as a % of all children),2020,22.59229850769043,Total,,%,,,,Total
+Brazil,BR,BRA,76,Children living in households with income below the national poverty line (as a % of all children),2020,31.243974685668945,Total,,%,,,,Total
+Bulgaria,BG,BGR,100,Children living in households with income below the national poverty line (as a % of all children),2020,24.70779800415039,Total,,%,,,,Total
+Burkina Faso,BF,BFA,854,Children living in households with income below the national poverty line (as a % of all children),2020,42.12199401855469,Total,,%,,,,Total
+Burundi,BI,BDI,108,Children living in households with income below the national poverty line (as a % of all children),2020,65.76881408691406,Total,,%,,,,Total
+Cape Verde,CV,CPV,132,Children living in households with income below the national poverty line (as a % of all children),2020,38.45766830444336,Total,,%,,,,Total
+Cambodia,KH,KHM,116,Children living in households with income below the national poverty line (as a % of all children),2020,20.90945816040039,Total,,%,,,,Total
+Cameroon,CM,CMR,120,Children living in households with income below the national poverty line (as a % of all children),2020,45.882713317871094,Total,,%,,,,Total
+Chad,TD,TCD,148,Children living in households with income below the national poverty line (as a % of all children),2020,45.909053802490234,Total,,%,,,,Total
+Chile,CL,CHL,152,Children living in households with income below the national poverty line (as a % of all children),2020,16.2085018157959,Total,,%,,,,Total
+China,CN,CHN,156,Children living in households with income below the national poverty line (as a % of all children),2020,1.830155611038208,Total,,%,,,,Total
+Colombia,CO,COL,170,Children living in households with income below the national poverty line (as a % of all children),2020,33.25801086425781,Total,,%,,,,Total
+Comoros,KM,COM,174,Children living in households with income below the national poverty line (as a % of all children),2020,48.072731018066406,Total,,%,,,,Total
+Congo,CG,COG,178,Children living in households with income below the national poverty line (as a % of all children),2020,43.87609100341797,Total,,%,,,,Total
+Costa Rica,CR,CRI,188,Children living in households with income below the national poverty line (as a % of all children),2020,29.748498916625977,Total,,%,,,,Total
+Croatia,HR,HRV,191,Children living in households with income below the national poverty line (as a % of all children),2020,20.791370391845703,Total,,%,,,,Total
+Côte d'Ivoire,CI,CIV,384,Children living in households with income below the national poverty line (as a % of all children),2020,50.1514778137207,Total,,%,,,,Total
+Ivory Coast,CI,CIV,384,Children living in households with income below the national poverty line (as a % of all children),2020,50.1514778137207,Total,,%,,,,Total
+"Congo, the Democratic Republic of the",CD,COD,180,Children living in households with income below the national poverty line (as a % of all children),2020,64.28990173339844,Total,,%,,,,Total
+Djibouti,DJ,DJI,262,Children living in households with income below the national poverty line (as a % of all children),2020,22.295270919799805,Total,,%,,,,Total
+Dominican Republic,DO,DOM,214,Children living in households with income below the national poverty line (as a % of all children),2020,20.5836181640625,Total,,%,,,,Total
+Ecuador,EC,ECU,218,Children living in households with income below the national poverty line (as a % of all children),2020,30.900938034057617,Total,,%,,,,Total
+Egypt,EG,EGY,818,Children living in households with income below the national poverty line (as a % of all children),2020,33.88735580444336,Total,,%,,,,Total
+El Salvador,SV,SLV,222,Children living in households with income below the national poverty line (as a % of all children),2020,34.94133758544922,Total,,%,,,,Total
+Swaziland,SZ,SWZ,748,Children living in households with income below the national poverty line (as a % of all children),2020,74.32402038574219,Total,,%,,,,Total
+Ethiopia,ET,ETH,231,Children living in households with income below the national poverty line (as a % of all children),2020,25.7224178314209,Total,,%,,,,Total
+Fiji,FJ,FJI,242,Children living in households with income below the national poverty line (as a % of all children),2020,34.83222198486328,Total,,%,,,,Total
+Gabon,GA,GAB,266,Children living in households with income below the national poverty line (as a % of all children),2020,34.876747131347656,Total,,%,,,,Total
+Gambia,GM,GMB,270,Children living in households with income below the national poverty line (as a % of all children),2020,54.65536880493164,Total,,%,,,,Total
+Georgia,GE,GEO,268,Children living in households with income below the national poverty line (as a % of all children),2020,14.059771537780762,Total,,%,,,,Total
+Ghana,GH,GHA,288,Children living in households with income below the national poverty line (as a % of all children),2020,26.847610473632812,Total,,%,,,,Total
+Guatemala,GT,GTM,320,Children living in households with income below the national poverty line (as a % of all children),2020,66.07859802246094,Total,,%,,,,Total
+Guinea,GN,GIN,324,Children living in households with income below the national poverty line (as a % of all children),2020,57.36674118041992,Total,,%,,,,Total
+Guinea-Bissau,GW,GNB,624,Children living in households with income below the national poverty line (as a % of all children),2020,72.29073333740234,Total,,%,,,,Total
+Haiti,HT,HTI,332,Children living in households with income below the national poverty line (as a % of all children),2020,63.68244171142578,Total,,%,,,,Total
+Honduras,HN,HND,340,Children living in households with income below the national poverty line (as a % of all children),2020,53.40120315551758,Total,,%,,,,Total
+India,IN,IND,356,Children living in households with income below the national poverty line (as a % of all children),2020,27.430360794067383,Total,,%,,,,Total
+Indonesia,ID,IDN,360,Children living in households with income below the national poverty line (as a % of all children),2020,10.550309181213379,Total,,%,,,,Total
+Iraq,IQ,IRQ,368,Children living in households with income below the national poverty line (as a % of all children),2020,23.22723388671875,Total,,%,,,,Total
+Jamaica,JM,JAM,388,Children living in households with income below the national poverty line (as a % of all children),2020,20.36478614807129,Total,,%,,,,Total
+Jordan,JO,JOR,400,Children living in households with income below the national poverty line (as a % of all children),2020,16.061487197875977,Total,,%,,,,Total
+Kazakhstan,KZ,KAZ,398,Children living in households with income below the national poverty line (as a % of all children),2020,2.867136001586914,Total,,%,,,,Total
+Kenya,KE,KEN,404,Children living in households with income below the national poverty line (as a % of all children),2020,41.43208694458008,Total,,%,,,,Total
+Kyrgyzstan,KG,KGZ,417,Children living in households with income below the national poverty line (as a % of all children),2020,29.264179229736328,Total,,%,,,,Total
+Lao People's Democratic Republic,LA,LAO,418,Children living in households with income below the national poverty line (as a % of all children),2020,31.95730972290039,Total,,%,,,,Total
+Lebanon,LB,LBN,422,Children living in households with income below the national poverty line (as a % of all children),2020,32.38874053955078,Total,,%,,,,Total
+Lesotho,LS,LSO,426,Children living in households with income below the national poverty line (as a % of all children),2020,57.21500015258789,Total,,%,,,,Total
+Liberia,LR,LBR,430,Children living in households with income below the national poverty line (as a % of all children),2020,52.79915237426758,Total,,%,,,,Total
+Madagascar,MG,MDG,450,Children living in households with income below the national poverty line (as a % of all children),2020,73.9231948852539,Total,,%,,,,Total
+Malawi,MW,MWI,454,Children living in households with income below the national poverty line (as a % of all children),2020,53.53713607788086,Total,,%,,,,Total
+Malaysia,MY,MYS,458,Children living in households with income below the national poverty line (as a % of all children),2020,0.4306248426437378,Total,,%,,,,Total
+Maldives,MV,MDV,462,Children living in households with income below the national poverty line (as a % of all children),2020,8.688265800476074,Total,,%,,,,Total
+Mali,ML,MLI,466,Children living in households with income below the national poverty line (as a % of all children),2020,41.88525390625,Total,,%,,,,Total
+Mauritania,MR,MRT,478,Children living in households with income below the national poverty line (as a % of all children),2020,37.464229583740234,Total,,%,,,,Total
+Mauritius,MU,MUS,480,Children living in households with income below the national poverty line (as a % of all children),2020,11.495019912719727,Total,,%,,,,Total
+Mexico,MX,MEX,484,Children living in households with income below the national poverty line (as a % of all children),2020,50.174766540527344,Total,,%,,,,Total
+"Micronesia, Federated States of",FM,FSM,583,Children living in households with income below the national poverty line (as a % of all children),2020,46.75001907348633,Total,,%,,,,Total
+Mongolia,MN,MNG,496,Children living in households with income below the national poverty line (as a % of all children),2020,28.646686553955078,Total,,%,,,,Total
+Montenegro,ME,MNE,499,Children living in households with income below the national poverty line (as a % of all children),2020,21.648578643798828,Total,,%,,,,Total
+Morocco,MA,MAR,504,Children living in households with income below the national poverty line (as a % of all children),2020,5.08243989944458,Total,,%,,,,Total
+Mozambique,MZ,MOZ,508,Children living in households with income below the national poverty line (as a % of all children),2020,47.82320785522461,Total,,%,,,,Total
+Myanmar,MM,MMR,104,Children living in households with income below the national poverty line (as a % of all children),2020,31.287940979003906,Total,,%,,,,Total
+Burma,MM,MMR,104,Children living in households with income below the national poverty line (as a % of all children),2020,31.287940979003906,Total,,%,,,,Total
+Namibia,,NAM,516,Children living in households with income below the national poverty line (as a % of all children),2020,21.516294479370117,Total,,%,,,,Total
+Nepal,NP,NPL,524,Children living in households with income below the national poverty line (as a % of all children),2020,29.7550048828125,Total,,%,,,,Total
+Nicaragua,NI,NIC,558,Children living in households with income below the national poverty line (as a % of all children),2020,29.25958251953125,Total,,%,,,,Total
+Niger,NE,NER,562,Children living in households with income below the national poverty line (as a % of all children),2020,45.66938018798828,Total,,%,,,,Total
+Nigeria,NG,NGA,566,Children living in households with income below the national poverty line (as a % of all children),2020,48.78692626953125,Total,,%,,,,Total
+"Macedonia, the former Yugoslav Republic of",MK,MKD,807,Children living in households with income below the national poverty line (as a % of all children),2020,22.2236385345459,Total,,%,,,,Total
+Pakistan,PK,PAK,586,Children living in households with income below the national poverty line (as a % of all children),2020,27.686067581176758,Total,,%,,,,Total
+Panama,PA,PAN,591,Children living in households with income below the national poverty line (as a % of all children),2020,34.509525299072266,Total,,%,,,,Total
+Papua New Guinea,PG,PNG,598,Children living in households with income below the national poverty line (as a % of all children),2020,41.37411117553711,Total,,%,,,,Total
+Paraguay,PY,PRY,600,Children living in households with income below the national poverty line (as a % of all children),2020,30.337833404541016,Total,,%,,,,Total
+Peru,PE,PER,604,Children living in households with income below the national poverty line (as a % of all children),2020,25.150108337402344,Total,,%,,,,Total
+Philippines,PH,PHL,608,Children living in households with income below the national poverty line (as a % of all children),2020,27.389780044555664,Total,,%,,,,Total
+"Moldova, Republic of",MD,MDA,498,Children living in households with income below the national poverty line (as a % of all children),2020,4.577531814575195,Total,,%,,,,Total
+Romania,RO,ROU,642,Children living in households with income below the national poverty line (as a % of all children),2020,25.362703323364258,Total,,%,,,,Total
+Russian Federation,RU,RUS,643,Children living in households with income below the national poverty line (as a % of all children),2020,14.529766082763672,Total,,%,,,,Total
+Russia,RU,RUS,643,Children living in households with income below the national poverty line (as a % of all children),2020,14.529766082763672,Total,,%,,,,Total
+Rwanda,RW,RWA,646,Children living in households with income below the national poverty line (as a % of all children),2020,39.43763732910156,Total,,%,,,,Total
+Saint Lucia,LC,LCA,662,Children living in households with income below the national poverty line (as a % of all children),2020,25.657676696777344,Total,,%,,,,Total
+Samoa,WS,WSM,882,Children living in households with income below the national poverty line (as a % of all children),2020,21.159971237182617,Total,,%,,,,Total
+Sao Tome and Principe,ST,STP,678,Children living in households with income below the national poverty line (as a % of all children),2020,63.72539520263672,Total,,%,,,,Total
+Senegal,SN,SEN,686,Children living in households with income below the national poverty line (as a % of all children),2020,51.716949462890625,Total,,%,,,,Total
+Serbia,RS,SRB,688,Children living in households with income below the national poverty line (as a % of all children),2020,15.771257400512695,Total,,%,,,,Total
+Seychelles,SC,SYC,690,Children living in households with income below the national poverty line (as a % of all children),2020,42.0206413269043,Total,,%,,,,Total
+Sierra Leone,SL,SLE,694,Children living in households with income below the national poverty line (as a % of all children),2020,53.342063903808594,Total,,%,,,,Total
+Solomon Islands,SB,SLB,90,Children living in households with income below the national poverty line (as a % of all children),2020,15.983909606933594,Total,,%,,,,Total
+South Africa,ZA,ZAF,710,Children living in households with income below the national poverty line (as a % of all children),2020,61.17396926879883,Total,,%,,,,Total
+South Sudan,SS,SSD,728,Children living in households with income below the national poverty line (as a % of all children),2020,84.60417175292969,Total,,%,,,,Total
+Sri Lanka,LK,LKA,144,Children living in households with income below the national poverty line (as a % of all children),2020,5.217876434326172,Total,,%,,,,Total
+"Palestinian Territory, Occupied",PS,PSE,275,Children living in households with income below the national poverty line (as a % of all children),2020,33.450740814208984,Total,,%,,,,Total
+Sudan,SD,SDN,736,Children living in households with income below the national poverty line (as a % of all children),2020,48.98845672607422,Total,,%,,,,Total
+Tajikistan,TJ,TJK,762,Children living in households with income below the national poverty line (as a % of all children),2020,29.23322105407715,Total,,%,,,,Total
+Thailand,TH,THA,764,Children living in households with income below the national poverty line (as a % of all children),2020,10.657964706420898,Total,,%,,,,Total
+Timor-Leste,TL,TLS,626,Children living in households with income below the national poverty line (as a % of all children),2020,42.6446533203125,Total,,%,,,,Total
+Togo,TG,TGO,768,Children living in households with income below the national poverty line (as a % of all children),2020,59.78117752075195,Total,,%,,,,Total
+Tonga,TO,TON,776,Children living in households with income below the national poverty line (as a % of all children),2020,23.34941291809082,Total,,%,,,,Total
+Tunisia,TN,TUN,788,Children living in households with income below the national poverty line (as a % of all children),2020,15.196474075317383,Total,,%,,,,Total
+Tuvalu,TV,TUV,798,Children living in households with income below the national poverty line (as a % of all children),2020,27.131175994873047,Total,,%,,,,Total
+Turkey,TR,TUR,792,Children living in households with income below the national poverty line (as a % of all children),2020,16.893285751342773,Total,,%,,,,Total
+Uganda,UG,UGA,800,Children living in households with income below the national poverty line (as a % of all children),2020,22.906238555908203,Total,,%,,,,Total
+Ukraine,UA,UKR,804,Children living in households with income below the national poverty line (as a % of all children),2020,0.8324219584465027,Total,,%,,,,Total
+"Tanzania, United Republic of",TZ,TZA,834,Children living in households with income below the national poverty line (as a % of all children),2020,29.241392135620117,Total,,%,,,,Total
+Uruguay,UY,URY,858,Children living in households with income below the national poverty line (as a % of all children),2020,13.766558647155762,Total,,%,,,,Total
+Uzbekistan,UZ,UZB,860,Children living in households with income below the national poverty line (as a % of all children),2020,11.807088851928711,Total,,%,,,,Total
+Vanuatu,VU,VUT,548,Children living in households with income below the national poverty line (as a % of all children),2020,15.983909606933594,Total,,%,,,,Total
+"Venezuela, Bolivarian Republic of",VE,VEN,862,Children living in households with income below the national poverty line (as a % of all children),2020,39.95137023925781,Total,,%,,,,Total
+Venezuela,VE,VEN,862,Children living in households with income below the national poverty line (as a % of all children),2020,39.95137023925781,Total,,%,,,,Total
+Viet Nam,VN,VNM,704,Children living in households with income below the national poverty line (as a % of all children),2020,8.506558418273926,Total,,%,,,,Total
+Vietnam,VN,VNM,704,Children living in households with income below the national poverty line (as a % of all children),2020,8.506558418273926,Total,,%,,,,Total
+Yemen,YE,YEM,887,Children living in households with income below the national poverty line (as a % of all children),2020,51.49694061279297,Total,,%,,,,Total
+Zambia,ZM,ZMB,894,Children living in households with income below the national poverty line (as a % of all children),2020,58.207916259765625,Total,,%,,,,Total
+Zimbabwe,ZW,ZWE,716,Children living in households with income below the national poverty line (as a % of all children),2020,75.97384643554688,Total,,%,,,,Total

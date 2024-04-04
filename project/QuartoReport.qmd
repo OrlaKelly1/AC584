@@ -1,0 +1,176 @@
+---
+title: "**Children in Need**"
+subtitle: "Childhood Poverty around the World"
+author: "Orla Kelly"
+date: "2024-04-04" 
+format:
+  html:
+    theme: united 
+    backgroundcolor: lightgrey
+    toc: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+```{r}
+#| label: setup
+#| include: false
+
+# libraries
+library(tidyverse)
+library(plotly)
+library(readr) 
+
+#data
+unicef_metadata <- read_csv("unicef_metadata.csv", 
+                            col_types = cols(year = col_number(), 
+                                             `Population, total` = col_number(), 
+                                             `GDP per capita (constant 2015 US$)` = col_number()))
+unicef_indicator_1 <- read_csv("unicef_indicator_1.csv", 
+                               col_types = cols(time_period = col_number(), 
+                                                obs_value = col_number()))
+#transformations
+data_join <- full_join(unicef_metadata, unicef_indicator_1, by = c("country" = "country", "year" = "time_period"))
+map_world <- map_data("world")
+map_data_join <- full_join(unicef_indicator_1, map_world, by = c("country" = "region"))
+data_join <- unicef_metadata %>%
+  full_join(unicef_indicator_1, by = c("country" = "country", "year" = "time_period"))
+filtered_dataset_2020 <- data_join%>%
+  filter( year== '2020')
+summary_data_barchart <- data_join %>%
+  group_by(country, year) %>%
+  summarise(m_Life_expectancy = mean(`Life expectancy at birth, total (years)`, na.rm = TRUE))
+african_countries <- c("Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cabo Verde", "Cameroon", "Central African Republic", "Chad", "Comoros", "Congo", "Cote d'Ivoire", "Djibouti", "Egypt", "Equatorial Guinea", "Eritrea", "Eswatini", "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Kenya", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius", "Morocco", "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda", "Sao Tome and Principe", "Senegal", "Seychelles", "Sierra Leone", "Somalia", "South Africa", "South Sudan", "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe")
+summary_data_barchart_african <- summary_data_barchart %>%
+  filter(country %in% african_countries)
+summary_data_barchart_african <- summary_data_barchart_african %>%
+  filter(year >= 2000 & year <= 2020)
+
+```
+
+# Introduction
+The issue of **childhood poverty** has plagued the world for thousands of years. Even **today**, in the 21st century, **millions of children are still living in poverty** around the world. Childhood poverty arises when there is a **lack of essential resources** available that are required to raise a child. The poverty line is dependent on each country, and it represents the minimum level of income that is seen to be adequate to survive off. This report **examines the issue of childhood poverty** using key data from unicef. This report **examines the issue of childhood poverty** using key data from UNICEF. This report **explores the relationships and connections** that can be drawn between **children living in poverty and other key metrics**, like:
+
+- ***Life Expectancy***
+- ***GDP per Capita***
+
+
+```{r}
+#| fig-cap: "The **exploration** of the **global issue** of child poverty ***begins*** with the map showing the **varying levels of childhood poverty** around the world. The **colour scale** used allows for **easy identification** of the poverty level in different areas on the map. From this map, it can be seen that the **worst** areas for childhood poverty are those in **Sub-Saharan Africa**. *Other areas* outside of this region that also have **high levels of poverty** include **Mexico** and **Afghanistan**. The country with the **lowest child poverty** level in 2020 is **Malaysia**, with just ***0.43%*** of children living in poverty. In **South Sudan**, nearly ***85%*** of **children** are living in **poverty**, so by comparing this with the level in Malaysia, the ***varying severity*** of child poverty can be seen."
+
+map_plot <- ggplot(map_data_join) +
+  aes(x = long, y = lat, group = group, fill = obs_value, 
+      text = paste("Country: ", country, "<br>% of children living in poverty: ", obs_value)) +
+  geom_polygon() +
+  labs(title = 'Childhood Poverty around the World') +
+  scale_fill_gradient(low = "#006400", high = "#FF0000") +
+  theme(axis.text = element_blank(),
+        axis.title = element_blank(),
+        legend.position = "none",
+        text = element_text(family = 'serif'))   
+
+map_plotly <- ggplotly(map_plot, tooltip = "text")
+map_plotly   
+
+```
+
+## GDP and Childhood Poverty
+
+```{r}
+#| fig-cap: "Next, we **delve** into the **relationship** between ***GDP per capita*** and ***child poverty*** in countries around the world. GDP per capita represents the economic output of individuals in a particular country. This **time series** shows the GDP per capita trends of nations over twenty years."
+tooltip_text_ts <- paste(
+  "Year: ", data_join$year, "<br>",
+  "Country: ", data_join$country, "<br>",
+  "GDP per capita: ", scales::dollar(data_join$`GDP per capita (constant 2015 US$)`), "<br>"
+)
+timeseries_plot_1 <- data_join %>%
+  ggplot() +
+  aes(year, `GDP per capita (constant 2015 US$)`, group = country, colour = country, 
+      text = tooltip_text_ts) +
+  geom_line() +
+  labs(x = "Year", y = "GDP per Capita ", title = "GDP per capita by Country, 2000 - 2020 ") +
+  theme_classic() +
+  theme(legend.position = "none",
+        text = element_text(family = 'serif'))
+
+
+ggplotly(timeseries_plot_1, tooltip = "text") 
+
+```
+
+```{r}
+#| fig-cap: "This scatterplot **examines** the link between the ***GDP per capita*** and the prevalence of ***child poverty*** across countries. Countries with a **high level** of child **poverty** also demonstrate a **lower GDP per capita**. There are of course some exceptions, for example, the *Seychelles* has a very **high GDP per capita**, but also has ***42.02%*** of **children living below the poverty line**."
+tooltip_text_sp1 <- paste(
+  "GDP per capita: ", scales::dollar(filtered_dataset_2020$`GDP per capita (constant 2015 US$)`), "<br>",
+  "Children Living in Poverty: ", filtered_dataset_2020$obs_value, "<br>",
+  "Country: ", filtered_dataset_2020$country
+)
+scatterplot_1 <- filtered_dataset_2020 %>%
+  ggplot() +
+  aes(`GDP per capita (constant 2015 US$)`, obs_value, colour = country, 
+      text = tooltip_text_sp1) +
+  geom_point(alpha = 0.65) +
+  labs(x = "GDP per Capita", y = "Children Living in Poverty", 
+       title = "Correlation between GDP per capita and % Children Living below the poverty line") +
+  theme(legend.position = "none",
+        text = element_text(family = 'serif')) +
+  scale_x_continuous(limits = c(0, 20000))
+
+ggplotly(scatterplot_1, tooltip = "text")
+
+
+```
+
+## Life Expectancy and Childhood Poverty
+
+```{r}
+#| fig-cap: "The second scatterplot explores the *correlation* between **child poverty** and **life expectancy**. In the ***majority*** of cases, countries with a **high level of childhood poverty**, tend to have **lower life expectancies**. For instance, ***South Sudan***, which has the **highest levels of child poverty**, had a **life expectancy** of ***55.48 years***. ***Chad*** had the **lowest life expectancy** of just over ***52 years***, but also suffers with **high levels of poverty**, with ***45.19%*** of children living below the poverty line. *On the other hand*, in countries with **lower levels of poverty**, the **life expectancy is longer**, highlighting the **significance** of childhood conditions on longevity."
+
+tooltip_text_sp2 <- paste(
+  "Life Expectancy: ", filtered_dataset_2020$`Life expectancy at birth, total (years)`, "<br>",
+  "Children Living in Poverty: ", filtered_dataset_2020$obs_value, "<br>",
+  "Country: ", filtered_dataset_2020$country
+)
+# Calculate linear regression
+lm_model <- lm(obs_value ~ `Life expectancy at birth, total (years)`, data = filtered_dataset_2020)
+
+# Scatterplot
+scatterplot_2 <- filtered_dataset_2020 %>%
+  ggplot() +
+  aes(x = `Life expectancy at birth, total (years)`, y = obs_value, colour = country, size = obs_value, text = tooltip_text_sp2) +
+  geom_point(alpha = 0.65) +
+  geom_abline(intercept = coef(lm_model)[1], slope = coef(lm_model)[2], color = "black") +  # Add regression line
+  labs(x = "Life Expectancy", y = "Children Living in Poverty", 
+       title = "Relationship between Life Expectancy and % Children Living below the poverty line") +
+  theme(legend.position = "none", text = element_text(family = 'serif')) +
+  scale_x_continuous(limits = c(50, 85))
+
+
+scatterplotly_2 <- ggplotly(scatterplot_2, tooltip = "text")
+
+scatterplotly_2
+
+```
+
+```{r}
+#| fig-cap: "The following **bar charts** show the ***average life expectancy*** in **African Countries** in the years ***2000 - 2020***. Each chart represents the data from one year, and any gaps are where data is not available. The bars in each chart are organised in ***descending order***, from **highest to lowest life expectancy**. The information provided in these bar charts provide **insights** into the **evolution of life expectancy since the turn of the millenium**."
+
+custom_palette <- scales::seq_gradient_pal(low = "#006400", high = "#90EE90")(seq(0, 1, length.out = 49))
+bar_chart_1 <- ggplot(summary_data_barchart_african, aes(reorder(country, -m_Life_expectancy), m_Life_expectancy, fill = country, text = paste("Country: ", country, "<br>Mean Life Expectancy: ", m_Life_expectancy))) +
+  geom_col() +
+  facet_wrap(~ year) +
+  labs(x = NULL, y = "Mean Life Expectancy", title = "Mean Life Expectancy in African Countries") + 
+  theme_classic() +
+  theme(axis.text.x = element_blank(), axis.title.x = element_blank(), legend.position = "none",
+        text = element_text(family = 'serif')) +
+  scale_fill_manual(values = custom_palette)
+plotly_chart <- ggplotly(bar_chart_1, tooltip = "text")
+
+plotly_chart  
+
+```
+ 
+# Conclusion 
+ 
+In conclusion, this report provides an **insight into a pressing global issue**. Childhood poverty continues to exist all around the world, even in developed countries. The **severity of the issue** is shown in the various visualisations above, through the examination of the key trends relating to childhood poverty. From the data examined, it is clear that there is a ***level of interdependence*** between **child poverty**, **GDP per capita** and **life expectancy**; with high poverty levels often associated with low life expectancy and lower levels of GDP per capita.**Behind each data point is a child that has been failed by society**, and the first step in combating this issue is understanding it. This report **aids with the understanding of global childhood poverty**, so one day we can hope to live in a world where **every child can thrive**.
